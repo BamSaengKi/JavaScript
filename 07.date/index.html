@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <Script>
+        const NOW_DATE = new Date();
+        document.write(NOW_DATE)
+        document.write("<br>")
+
+        document.write("년도 값 빼오기" + "<br />")
+        document.write(NOW_DATE.getFullYear())
+        document.write("<br>")
+        document.write("월 값 빼오기" + "<br />")
+        document.write(NOW_DATE.getMonth() +1);
+        document.write("<br>")
+        document.write("날짜 값 빼오기" + "<br />")
+        document.write(NOW_DATE.getDate())
+        document.write("<br>")
+        document.write("요일 값 빼오기" + "<br />")
+        switch (NOW_DATE.getDay()) {
+            case 0:
+                nowDay="일요일"
+                
+                break;
+            case 1:
+                nowDay="월요일"
+            
+                break;  
+                
+            case 2:
+            nowDay = "화요일";
+            break;
+
+            case 3:
+                nowDay = "수요일";
+            break;
+
+            case 4:
+                nowDay = "목요일";
+            break;
+
+            case 5:
+                nowDay = "금요일";
+            break;
+
+            case 6:
+                nowDay = "토요일";
+            break;
+
+            default :
+                nowDay = "알수없는요일";
+            break;
+        }
+        document.write("오늘은 " + nowDay + "<br>")
+        document.write(NOW_DATE.getHours() + "시 <br>")
+        document.write(NOW_DATE.getMinutes() + "분 <br>")
+        document.write(NOW_DATE.getSeconds() + "초 <br>")
+        document.write(NOW_DATE.getMilliseconds() + "<br>")
+
+
+        
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -47,9 +47,55 @@
         document.write("<br />")
         bool = false;
         document.write(bool)
+        document.write("<br />" + "<hr>")
         
-        
-    
+        // 변수의 타입 확인//
+        document.write(typeof(str))
+        document.write("<br />")
+        document.write(typeof(num))
+        document.write("<br />")
+        document.write(typeof(Arraynum))
+        document.write("<br />")
+        document.write(typeof(bool))
+
+        document.write("<br>"+"<hr>")
+        document.write("형변환")
+        document.write("<br>")
+        var str = "string";
+        document.write(str + " of type is" + typeof(str) + "<br>")
+        str = parseInt(str);
+        document.write(str + " of type is " + typeof(str)) // NaN : 숫자이지만 숫자가 아님// 
+        document.write("<br>")
+        var str = "55숫자"
+        document.write(str + " of type is " + typeof(str)+ "<br>")
+        str = parseInt(str)
+        document.write(str + " of type is " + typeof(str) + "<br>")
+        var  str = "55숫자"
+        str = Number(str)
+        document.write(str + " of type is " + typeof(str) + "<br>")
+        document.write("<br>"+"<hr>")
+        document.write("형변환")
+        document.write("<br>")
+        var num = 440;
+        document.write(num + " of type is " + typeof(num) + "<br>")
+        str = String(num);
+        document.write(str + " of type is " + typeof(str))
+        document.write("<br>")
+
+
+
+        // 숫자 0, null형 null, undefined형 undefined,
+        // 문자열 공백은 Boolean형으로 변환하면 
+        //false를 반환합니다.그외의 값은 true를 반환합니다
+
+        var num1 = 700;
+        document.write(num1 + " of type is " + typeof(num1) + "<br>")
+        var bool1 = Boolean(num1);
+        document.write(bool1 + " of type is " + typeof(bool1) + "<br>")
+        var num1 = 0;
+        document.write(num1 + " of type is " + typeof(num1) + "<br>")
+        var bool1 = Boolean(num1);
+        document.write(bool1 + " of type is " + typeof(bool1) + "<br>")
         
     </script>
 </head>
