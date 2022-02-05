@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그 속성 조정하기</title>
+    <script>
+        window.onload = function(){
+            var target = document.getElementsByTagName('p')[0];
+            target.setAttribute('class','hello')
+
+
+
+            var target = document.getElementsByTagName('input')[0];
+            var attrValue = target.getAttribute('type')
+            console.log('attrValue is ' + attrValue);
+
+            if(attrValue == "button"){
+                target.removeAttribute('type')
+                console.log('attrValue is ' + attrValue);
+            }
+
+            var target= document.getElementsByTagName('input')[0];
+            var attr = target.hasAttribute('type')
+
+            if(attr === false){
+                target.setAttribute('type','button')
+                target.setAttribute('value','Im button')
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>here</p>
+    <input type="button">
+    
+</body>
+</html>

@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글로벌 변수와 로컬 변수</title>
+    <title>함수참조</title>
     <script>
-        glo_var = 10;
-
-        function hello() {
-            var local_var = 20;
-            local_var2 = 30;
-
+        function funcRef() {
+            return "ref";
         }
-        hello();
-        document.write(local_var2)
+        var hello = funcRef;
+        document.write(hello())
     </script>
 </head>
 <body>

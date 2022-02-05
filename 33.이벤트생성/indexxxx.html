@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체인지(변경) 이벤트 생성</title>
+    <script>
+        window.onload = function(){
+            var target = document.getElementsByTagName('select')[0];
+            target.addEventListener('change',function(){
+                alert(this.value);
+            })
+            }
+    </script>
+</head>
+<body>
+    <!-- <select onChange="alert(this.value)");>
+        <option value="value">value</option>
+        <option value="value2">value2</option>
+        <option value="value3">value3</option>
+
+        
+    </select>     -->
+
+    <select>
+        <option value="Mickey">Mickey</option>
+        <option value="Minnie">Minnie</option>
+        <option value="duffy">duffy</option>
+
+        
+    </select>    
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+    <script>
+        // 호이스팅은 함수선언식에서만 작동한다.
+
+        hoisting();
+        function hoisting() {
+            document.write("I am here")
+            
+        }
+
+        hoisting2();
+        const hoisting2 = function(){
+            documnet.write("I am here2")
+        }
+
+
+        document.write(hoisting3());
+        hoisting3 = () => "I am here3"
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

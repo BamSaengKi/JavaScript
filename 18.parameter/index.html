@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글로벌 변수와 로컬 변수</title>
+    <title>Parameter</title>
     <script>
-        glo_var = 10;
-
-        function hello() {
-            var local_var = 20;
-            local_var2 = 30;
-
+        function sum(param1, param2 = 3, param3 = 10) {
+            document.write(param1+ param2+ param3+"<br>")
+            
         }
-        hello();
-        document.write(local_var2)
+        sum(1);
+        sum(1,2);
+        sum(1,2,3);
     </script>
 </head>
 <body>

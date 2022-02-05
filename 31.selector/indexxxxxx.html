@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터의 HTML 태그값 얻기와 변경하기</title>
+    <script>
+        window.onload = function(){
+            // console.log("내가 사용하는 OS는 " + document.getElementById('os').innerHTML)
+            // console.log(document.getElementsByClassName('os')[2].innerHTML)
+            // document.getElementById('os').innerHTML = "<i>iPadOS</i>";
+            txt = document.getElementsByClassName('os')[1].innerHTML;
+            txt = '<i>' + txt + "</i>";
+            document.getElementsByClassName('os')[1].innerHTML = txt;
+        }
+    </script>
+</head>
+<body>
+    <!-- <p id="os">
+        <b>iPadOS</b>
+    </p>
+    <p class="os">
+        <b>iPadOS</b>
+    </p>
+    <p class="os">
+        <b>IOS</b>
+    </p>
+    <p class="os">
+        <b>MacOS</b>
+    </p> -->
+
+    <!-- <p id='os'></p> -->
+
+    <p class="os">iPadOS</p>
+    <p class="os">IOS</p>
+    <p class="os">MacOS</p>
+
+</body>
+</html>

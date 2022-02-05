@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button</title>
+    <script>
+        window.onload = function(){
+            // console.log('checkBox is ' + document.getElementById('checked').checked);        
+            // console.log('uncheckBox is ' + document.getElementById('unchecked').checked);   
+             
+            document.getElementById('checked').checked= false;
+            document.getElementById('unchecked').checked = true;
+        }
+    </script>
+</head>
+<body>
+    <label for="checked">checked</label>
+    <input type="radio" id = "checked" checked/>
+    <label for="unchecked">unchecked</label>
+    <input type="radio" id = "unchecked">
+</body>
+</html>
